@@ -17,6 +17,21 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: 'AIzaSyATrTcNVIBCXhDuZW6mUSPrJqSHbqqgn9c',
+      authDomain: 'seminario-34b87.firebaseapp.com',
+      databaseURL: 'https://seminario-34b87.firebaseio.com',
+      storageBucket: 'seminario-34b87.appspot.com',
+    },
+
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    }
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
